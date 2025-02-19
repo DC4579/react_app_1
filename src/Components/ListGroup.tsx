@@ -3,9 +3,10 @@ import { MouseEvent, useState } from "react";
 interface ListGroupProps{
   items:string[];
   heading:string;
+  onSelectedItem:(item:string) => void;
 }
 
-function ListGroup({items , heading} : Props) {
+function ListGroup({items , heading ,onSelectedItem} : ListGroupProps) {
   
   // let selectedIndex = 0;
   // Hook

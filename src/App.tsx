@@ -1,23 +1,35 @@
-import Message from "./Message";
-import ListGroup from "./Components/ListGroup";
+// import Message from "./Message";
+// import ListGroup from "./Components/ListGroup";
 
-function App() {
-  let items: string[] = [
-      "New York",
-      "San Francisco",
-      "Tokyo",
-      "London",
-      "Paris",
-    ];
-  return (
+import Alert from "./Components/Alert";
+
+function App(){
+  return(
     <div>
-      <>ListGroup items = {items} heading = "Cities" </>
-      <Message />
-      <ListGroup /> 
-    
+      <Alert text = "Hello World" />
     </div>
-  );
+  )
 }
+
+// function App() {
+//   let items: string[] = [
+//     "New York",
+//     "San Francisco",
+//     "Tokyo",
+//     "London",
+//     "Paris",
+//   ];
+//   return (
+//     <div>
+//       <ListGroup items={items}
+//        heading="Cities"
+//        onSelectedItem={(item) => console.log("Selected item:", item)} // ✅ Ensure required prop is passed
+//       />
+//       {/* <ListGroup items = {items} heading = "Cities"> */}
+//       <Message />
+//     </div>
+//   );
+// }
 
 export default App;
 
